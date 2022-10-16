@@ -1,81 +1,337 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
+import Navbar from '../components/Navbar.astro';
+import { Image } from '@astrojs/image/components';
+import Footer from '../components/Footer.astro';
+import { Icon } from 'astro-icon';
+
 ---
 
-<Layout title="Welcome to Astro.">
-	<main>
-		<h1>Welcome to <span class="text-gradient">Astro</span></h1>
-		<p class="instructions">
-			To get started, open the directory <code>src/pages</code> in your project.<br />
-			<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
-		</p>
-		<ul role="list" class="link-card-grid">
-			<Card
-				href="https://docs.astro.build/"
-				title="Documentation"
-				body="Learn how Astro works and explore the official API docs."
-			/>
-			<Card
-				href="https://astro.build/integrations/"
-				title="Integrations"
-				body="Supercharge your project with new frameworks and libraries."
-			/>
-			<Card
-				href="https://astro.build/themes/"
-				title="Themes"
-				body="Explore a galaxy of community-built starter themes."
-			/>
-			<Card
-				href="https://astro.build/chat/"
-				title="Community"
-				body="Come say hi to our amazing Discord community. ❤️"
-			/>
-		</ul>
-	</main>
+<Layout title="Hibah Kompetisi Kewirausahaan 2.0 #CiptakanPeluang">
+	<Navbar />
+	<div class="bg-primary text-white flex py-12 w-full justify-center px-3 pt-32">
+		<div class="max-w-screen-xl flex flex-col lg:flex-row justify-between w-full items-center">
+			<div class="flex flex-col gap-6 max-w-lg">
+				<Image src={import("../assets/images/hokilogo.png")} alt="Hoki 2.0" height={110} width={270} />
+				<h1 class="text-3xl font-bold">Hibah Kompetisi Kewirausahaan 2.0 #CiptakanPeluang</h1>
+				<a href="#" class="py-4 px-8 rounded-xl bg-secondary text-tertiary w-fit font-semibold">Daftar Sekarang</a>
+			</div>
+			<Image src={import("../assets/images/art.png")} alt="Jumbotron" height={400} width={400} />
+		</div>
+	</div>
+	<div class="bg-white flex  py-12 w-full justify-center px-6">
+		<div  class="max-w-screen-xl flex flex-col md:flex-row justify-between w-full gap-6">
+			<div class="flex flex-col gap-6 w-full">
+				<h2 id="about" class="text-3xl font-bold text-tertiary">Tentang Program</h2>
+			</div>
+			<div class="flex flex-col gap-6 w-full">
+				<h3 class="text-2xl font-semibold text-tertiary">Hibah Kompetisi Kewirausahaan 2.0</h3>
+				<div class="flex gap-6 w-full flex-col text-neutral-700 max-w-lg">
+					<p>Penyelenggaraan Hibah Kompetisi Kewirausahaan (HoKi) tahun 2022 oleh Ikatan Sarjana Ekonomi Indonesia (ISEI) Jakarta yang didukung oleh  PT Pegadaian sangat relevan dan dapat turut berperan dalam upaya mengakselerasi pencetakan wirausaha baru serta menumbuhkembangkan UMKM di Indonesia. Oleh Karena itu ISEI Jakarta bersama PT Pegadaian kembali akan menyelenggarakan </p>
+					<p>Kegiatan HoKi pada tahun 2022 (Season 2). Hal ini juga tidak terlepas dari keberhasilan pilot project pada kegiatan Hibah Kompetisi Kewirausahaan (HoKi) sebelumnya pada 2021, yang juga melibatkan Perguruan Tinggi. Maka, dengan mengikuti program HoKi, diharapkan masyarakat atau mahasiswa semakin fokus untuk menjadi entrepreneur yang berkualitas, berkelanjutan dan tangguh.</p>
+				</div>
+				<h4 class="font-semibold">Powered By</h4>
+				<div class="flex gap-6 w-fit">
+					<Image class="flex flex-shrink-0 object-contain" src={import("../assets/images/isei.png")} alt="Ikatan Sarjana Ekonomi Indonesia (ISEI)" height={40} />
+					<Image class="flex flex-shrink-0 object-contain" src={import("../assets/images/pegadaian.png")} alt="Pegadaian" height={40} />
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="bg-primary text-white flex py-12 w-full justify-center flex-col items-center px-3">
+		<h2 id="term" class="text-3xl font-bold text-white">Ketentuan Kompetisi</h2>
+		<div class="max-w-screen-xl flex flex-col md:flex-row justify-between w-full py-6 gap-6">
+			<div class="flex flex-col gap-6 w-full p-5 bg-white rounded-2xl shadow-lg border">
+				<h3 class="text-2xl font-semibold text-tertiary">Business Plan</h3>
+				<div class="flex gap-6 w-full flex-col text-neutral-700">
+					<ul class="list-decimal pl-3">
+						<li class="font-semibold">Mahasiswa menciptakan rencana bisnis yang inovatif dan komprehensif yang diwujudkan dengan format sebagai berikut:</li>
+						<ul class="list-disc pl-3 pt-2 pb-4">
+							<li>Judul: Times New Roman, 14pt, Bold</li>
+							<li>Sub Judul: Times New Roman, 12pt, Bold</li>
+							<li>Isi: Times New Roman, 12pt</li>
+							<li>Layout: Justified</li>
+							<li>Ukuran Kertas: A4</li>
+							<li>Line Spacing: 1.5 lines</li>
+							<li>Margin: 2.5cm</li>
+							<li>Format File: .pdf</li>
+							<li>Nama File: Proposal_Nama Tim_Hoki 2</li>
+							<li>Header: Logo Hoki di kiri</li>
+							<li>Footer: Page Number (pojok kanan bawah)</li>
+							<li>Jumlah Halaman: Minimal 10 halaman dan maksimal 15 halaman (tidak termasuk sampul, daftar isi, dan referensi)</li>
+						</ul>
+						<li class="font-semibold">Proposal harus orisinil karya pribadi dan belum pernah menjuarai kompetisi lain. Eligibilitas Proposal</li>
+						<ul class="list-disc pl-3 pt-2">
+							<li>Pernyataan orisinalitas bermaterai yang ditandatangani oleh anggota tim dan diketahui Perguruan Tinggi</li>
+							<ul class="my-4">
+								<a href="#" class="py-2 px-4 rounded-lg bg-secondary text-tertiary w-fit font-semibold flex gap-2 items-center">
+									<p>
+									  Contoh Surat Pernyataan Orisinalitas
+									</p>
+									<div class="w-5 h-5">
+										<Icon name="ic:outline-file-download" />
+									</div>
+								</a>
+							</ul>
+							<li>Pernyataan bermaterai yang ditandatangani oleh Pejabat yang berwenang dari Perguruan Tinggi</li>
+							<ul class="my-4">
+								<a href="#" class="py-2 px-4 rounded-lg bg-secondary text-tertiary w-fit font-semibold flex gap-2 items-center">
+									<p>
+									  Contoh Surat Pernyataan dari Perguruan Tinggi
+									</p>
+									<div class="w-5 h-5">
+										<Icon name="ic:outline-file-download" />
+									</div>
+								</a>
+							</ul>
+						</ul>
+					</ul>
+				</div>
+			</div>
+			<div class="flex flex-col gap-6 w-full">
+				<div class="flex flex-col gap-6 w-full p-5 bg-white rounded-2xl shadow-lg border">
+					<h3 class="text-2xl font-semibold text-tertiary">Syarat Peserta</h3>
+					<div class="flex gap-6 w-full flex-col text-neutral-700">
+						<ul class="list-decimal pl-3 font-semibold">
+							<li>Mahasiswa S1 semester 5 s.d. 8</li>
+							<li>Tim terdiri dari 2 s/d 3 orang (1 ketua dan maksimal 2 orang anggota)</li>
+							<li>Khusus Perguruan Tinggi di wilayah DKI Jakarta</li>
+							<li>Satu Perguruan Tinggi hanya dapat mengusulkan maksimal 3 Tim</li>
+						</ul>
+					</div>
+				</div>
+				<div class="flex flex-col gap-6 w-full p-5 bg-white rounded-2xl shadow-lg border">
+					<h3 class="text-2xl font-semibold text-tertiary">Kriteria Penilaian</h3>
+					<div class="flex gap-3 w-full flex-col text-neutral-700">
+						<div class="flex gap-5 items-center">
+							<div class="rounded-full p-3 border-2 border-secondary flex h-12 w-12 items-center justify-center font-bold">
+								<span>25%</span>
+							</div>
+							<div class="flex flex-col">
+								<h4 class="font-semibold text-lg">Kreativitas</h4>
+								<p>a. Gagasan (keunikan dan kebermanfaatan)</p>
+								<p>b. Keunggulan Produk/Jasa</p>
+							</div>
+						</div>
+						<div class="flex gap-5 items-center">
+							<div class="rounded-full p-3 border-2 border-secondary flex h-12 w-12 items-center justify-center font-bold">
+								<span>25%</span>
+							</div>
+							<div class="flex flex-col">
+								<h4 class="font-semibold text-lg">Peluang Pasar</h4>
+								<p>a. Potensi perolehan profit</p>
+								<p>b. Potensi keberlanjutan usaha</p>
+							</div>
+						</div>
+						<div class="flex gap-5 items-center">
+							<div class="rounded-full p-3 border-2 border-secondary flex h-12 w-12 items-center justify-center font-bold">
+								<span>25%</span>
+							</div>
+							<div class="flex flex-col">
+								<h4 class="font-semibold text-lg">Potensi Program</h4>
+							</div>
+						</div>
+						<div class="flex gap-5 items-center">
+							<div class="rounded-full p-3 border-2 border-secondary flex h-12 w-12 items-center justify-center font-bold">
+								<span>15%</span>
+							</div>
+							<div class="flex flex-col">
+								<h4 class="font-semibold text-lg">Timeline Bisnis</h4>
+							</div>
+						</div>
+						<div class="flex gap-5 items-center">
+							<div class="rounded-full p-3 border-2 border-secondary flex h-12 w-12 items-center justify-center font-bold">
+								<span>15%</span>
+							</div>
+							<div class="flex flex-col">
+								<h4 class="font-semibold text-lg">Penyusunan Anggaran Biaya</h4>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="flex flex-col md:flex-row sm:items-center md:justify-between gap-6 w-full px-5 py-10 bg-white text-neutral-800 rounded-2xl shadow-lg max-w-screen-xl relative mt-16 -mb-24">
+			<div class="flex flex-col sm:flex-row gap-6">
+				<h4 class="text-4xl text-tertiary font-bold">24 hari lagi</h4>
+				<div class="flex flex-col">
+					<p class="text-lg font-semibold">Pendaftaran akan segera berakhir</p>
+					<p>Jangan Lewatkan kesempatan berharga ini</p>
+				</div>
+			</div>
+			<div class="flex gap-3 flex-wrap">
+				<a href="#" class="py-4 px-8 rounded-xl bg-secondary text-tertiary w-fit font-semibold">Daftar Sekarang</a>
+				<a href="#" class="py-4 px-8 rounded-xl bg-white border-primary border-2 text-tertiary w-fit font-semibold">Guidebook</a>
+			</div>
+		</div>
+	</div>
+	<div class="bg-white flex py-12 w-full justify-center flex-col items-center px-3 gap-6 pt-24">
+		<h2 id="timeline" class="text-3xl font-bold text-tertiary">Timeline</h2>
+		<div class="max-w-screen-xl flex w-full gap-6">
+			<div class="flex flex-col w-full justify-center items-center">
+				<div class="flex gap-6 items-center w-full">
+					<h3 class="text-lg md:text-2xl font-semibold text-tertiary w-full text-right">24 Oktober 2022</h3>
+					<div class="w-2 h-24 bg-primary relative">
+						<div class="inset-0 absolute flex items-center justify-center">
+							<Icon class="w-8 h-8 p-1 bg-white text-[#73C042] rounded-xl absolute"name="fluent:flag-16-filled"/>
+						</div>
+					</div>
+					<div class="w-full">
+						<div class="flex flex-col p-5 rounded-xl shadow-md text-tertiary font-semibold w-full max-w-sm border">
+							<p>Talkshow, Kickoff, dan Pembukaan Pendaftaran</p>
+							<a href="#event" class="text-sm text-neutral-500">Lihat Event</a>
+						</div>
+					</div>
+				</div>
+				<div class="flex gap-6 items-center w-full">
+					<h3 class="text-lg md:text-2xl font-semibold text-tertiary w-full text-right">24 Oktober - 30 November 2022</h3>
+					<div class="w-2 h-24 bg-primary relative">
+						<div class="inset-0 absolute flex items-center justify-center">
+							<span class="w-6 h-6 bg-white border-4 border-[#73C042] rounded-xl absolute"></span>
+						</div>
+					</div>
+					<div class="w-full">
+						<div class="flex flex-col p-5 rounded-xl shadow-md text-tertiary font-semibold w-full max-w-sm border">
+							<p>Pendaftaran Peserta</p>
+							<a href="#event" class="text-sm text-neutral-500">Daftar</a>
+						</div>
+					</div>
+				</div>
+				<div class="flex gap-6 items-center w-full">
+					<h3 class="text-lg md:text-2xl font-semibold text-tertiary w-full text-right">1 - 10 Desember 2022</h3>
+					<div class="w-2 h-24 bg-primary relative">
+						<div class="inset-0 absolute flex items-center justify-center">
+							<span class="w-6 h-6 bg-white border-4 border-[#73C042] rounded-xl absolute"></span>
+						</div>
+					</div>
+					<div class="w-full">
+						<div class="flex p-5 rounded-xl shadow-md text-tertiary font-semibold w-full max-w-sm border">Seleksi 20 Semifinalis</div>
+					</div>
+				</div>
+				<div class="flex gap-6 items-center w-full">
+					<h3 class="text-lg md:text-2xl font-semibold text-tertiary w-full text-right">12 Desember 2022</h3>
+					<div class="w-2 h-24 bg-primary relative">
+						<div class="inset-0 absolute flex items-center justify-center">
+							<span class="w-6 h-6 bg-white border-4 border-[#73C042] rounded-xl absolute"></span>
+						</div>
+					</div>
+					<div class="w-full">
+						<div class="flex p-5 rounded-xl shadow-md text-tertiary font-semibold w-full max-w-sm border">Pengumuman 20 Semifinalis</div>
+					</div>
+				</div>
+				<div class="flex gap-6 items-center w-full">
+					<h3 class="text-lg md:text-2xl font-semibold text-tertiary w-full text-right">12 Desember 2022</h3>
+					<div class="w-2 h-24 bg-primary relative">
+						<div class="inset-0 absolute flex items-center justify-center">
+							<span class="w-6 h-6 bg-white border-4 border-[#73C042] rounded-xl absolute"></span>
+						</div>
+					</div>
+					<div class="w-full">
+						<div class="flex p-5 rounded-xl shadow-md text-tertiary font-semibold w-full max-w-sm border">Pengumpulan PPT 20 Semifinalis</div>
+					</div>
+				</div>
+				<div class="flex gap-6 items-center w-full">
+					<h3 class="text-lg md:text-2xl font-semibold text-tertiary w-full text-right">14 - 15 Desember 2022</h3>
+					<div class="w-2 h-24 bg-primary relative">
+						<div class="inset-0 absolute flex items-center justify-center">
+							<span class="w-6 h-6 bg-white border-4 border-[#73C042] rounded-xl absolute"></span>
+						</div>
+					</div>
+					<div class="w-full">
+						<div class="flex p-5 rounded-xl shadow-md text-tertiary font-semibold w-full max-w-sm border">Presentasi Bisnis (Offline</div>
+					</div>
+				</div>
+				<div class="flex gap-6 items-center w-full">
+					<h3 class="text-lg md:text-2xl font-semibold text-tertiary w-full text-right">15 Desember 2022</h3>
+					<div class="w-2 h-24 bg-primary relative">
+						<div class="inset-0 absolute flex items-center justify-center">
+							<span class="w-6 h-6 bg-white border-4 border-[#73C042] rounded-xl absolute"></span>
+						</div>
+					</div>
+					<div class="w-full">
+						<div class="flex p-5 rounded-xl shadow-md text-tertiary font-semibold w-full max-w-sm border">Awarding Night 10 Finalis (Offline)</div>
+					</div>
+				</div>
+				<div class="flex gap-6 items-center w-full">
+					<h3 class="text-lg md:text-2xl font-semibold text-tertiary w-full text-right">19 Desember 2022</h3>
+					<div class="w-2 h-24 bg-primary relative">
+						<div class="inset-0 absolute flex items-center justify-center">
+							<span class="w-6 h-6 bg-white border-4 border-[#73C042] rounded-xl absolute"></span>
+						</div>
+					</div>
+					<div class="w-full">
+						<div class="flex p-5 rounded-xl shadow-md text-tertiary font-semibold w-full max-w-sm border">Penandatanganan MoU Kerjasama</div>
+					</div>
+				</div>
+				<div class="flex gap-6 items-center w-full">
+					<h3 class="text-lg md:text-2xl font-semibold text-tertiary w-full text-right">4 Februari - 15 April 2023</h3>
+					<div class="w-2 h-24 bg-primary relative">
+						<div class="inset-0 absolute flex items-center justify-center">
+							<span class="w-6 h-6 bg-white border-4 border-[#73C042] rounded-xl absolute"></span>
+						</div>
+					</div>
+					<div class="w-full">
+						<div class="flex p-5 rounded-xl shadow-md text-tertiary font-semibold w-full max-w-sm border">Pendampingan Bisnis 10 Finalis (Hybrid)</div>
+					</div>
+				</div>
+				<div class="flex gap-6 items-center w-full">
+					<h3 class="text-lg md:text-2xl font-semibold text-tertiary w-full text-right">15 April 2023</h3>
+					<div class="w-2 h-24 bg-primary relative">
+						<div class="inset-0 absolute flex items-center justify-center">
+							<Icon class="w-8 h-8 p-1 bg-white text-[#73C042] rounded-xl absolute"name="fluent:hat-graduation-12-filled"/>
+						</div>
+					</div>
+					<div class="w-full">
+						<div class="flex p-5 rounded-xl shadow-md text-tertiary font-semibold w-full max-w-sm border">Graduation</div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+		<div class="flex flex-col gap-6 w-full p-12 bg-white rounded-2xl shadow-lg max-w-screen-xl relative -mb-24 border">
+			<div class="flex flex-col w-full items-center gap-6">
+				<div class="flex flex-col md:flex-row gap-6 justify-between w-full">
+					<div class="flex flex-col gap-3">
+						<h3 id="event" class="text-4xl font-semibold text-tertiary">Kick Off</h3>
+						<p class="text-3xl font-bold text-neutral-700">#CiptakanPeluang</p>
+						<span class="py-2 px-5 bg-primary w-fit font-semibold rounded-lg text-white">BISNIS MAHASISWA, SIAP MENDUNIA</span>
+					</div>
+					<div class="flex flex-col gap-6 max-w-md">
+						<div class="py-2 px-5 bg-tertiary font-semibold rounded-lg text-white">
+							<p class="text-3xl font-semibold">24 Oktober 2022</p>
+							<p class="text-xl font-bold">SPACE RELIEF SARINAH</p>
+							<p>15.00 - 17.30 WIB</p>
+						</div>
+						<p>
+							Talkshow sebagai ignition kepada calon peserta agar mendapatkan motivasi dan juga tujuan yang jelas dalam berpartisipasi kegiatan. Setelah talkshow dilakukan seremonial kick off pembukaan pendaftaran untuk kompetisi bisnis mahasiswa.
+						</p>
+					</div>
+				</div>
+				<Image class="flex flex-shrink-0 object-contain" src={import("../assets/images/event.png")} alt="Kick Off Event 24 Oktober 2022" />
+				<a href="#" class="py-4 px-8 rounded-xl bg-secondary text-tertiary w-fit font-semibold">Daftar Event</a>
+			</div>
+		</div>
+	</div>
+	<div class="bg-primary text-white flex py-12 w-full justify-center flex-col items-center px-3 pt-24">
+		<h2 id="benefit" class="text-3xl font-bold text-white">Keuntungan mengikuti Kompetisi HoKi</h2>
+		<div class="max-w-screen-xl flex flex-col md:flex-row justify-between w-full py-6 gap-6 relative">
+			<div class="flex items-center gap-3 w-full p-5 bg-white rounded-2xl shadow-lg">
+				<div class="bg-primary p-3 rounded-full">
+					<div class="w-6 h-6 text-white">
+						<Icon name="ic:round-attach-money" />
+					</div>
+				</div>
+				<h4 class="text-lg text-tertiary font-semibold">Hibah Dana hingga 30 juta</h4>
+			</div>
+			<div class="flex gap-3 items-center w-full p-5 bg-white rounded-2xl shadow-lg border">
+				<div class="bg-primary p-3 rounded-full">
+					<div class="w-6 h-6 text-white">
+						<Icon name="ic:round-people" />
+					</div>
+				</div>
+				<h4 class="text-lg text-tertiary font-semibold">Pendampingan Kewirausahaan</h4>
+			</div>
+		</div>
+	</div>
+	<Footer />
 </Layout>
-
-<style>
-	main {
-		margin: auto;
-		padding: 1.5rem;
-		max-width: 60ch;
-	}
-	h1 {
-		font-size: 3rem;
-		font-weight: 800;
-		margin: 0;
-	}
-	.text-gradient {
-		background-image: var(--accent-gradient);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-size: 400%;
-		background-position: 0%;
-	}
-	.instructions {
-		line-height: 1.6;
-		margin: 1rem 0;
-		border: 1px solid rgba(var(--accent), 25%);
-		background-color: white;
-		padding: 1rem;
-		border-radius: 0.4rem;
-	}
-	.instructions code {
-		font-size: 0.875em;
-		font-weight: bold;
-		background: rgba(var(--accent), 12%);
-		color: rgb(var(--accent));
-		border-radius: 4px;
-		padding: 0.3em 0.45em;
-	}
-	.instructions strong {
-		color: rgb(var(--accent));
-	}
-	.link-card-grid {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-		gap: 1rem;
-		padding: 0;
-	}
-</style>
