@@ -6,7 +6,7 @@ import { Image } from '@astrojs/image/components'
 import Footer from '../components/Footer.astro'
 import { Icon } from 'astro-icon'
 
-import differenceInDays from 'date-fns/differenceInDays'
+import differenceInDays from 'date-fns/differenceInDays/index.js'
 
 const day = differenceInDays(new Date(2022, 10, 30), new Date(Date.now()))
 ---
