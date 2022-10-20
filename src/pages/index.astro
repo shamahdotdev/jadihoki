@@ -2,6 +2,7 @@
 import Layout from '../layouts/Layout.astro'
 import Navbar from '../components/Navbar.astro'
 import { DownloadButton } from '../components/DownloadButton.jsx'
+import { TermTab } from '../components/TermTab.jsx'
 import { Image } from '@astrojs/image/components'
 import Footer from '../components/Footer.astro'
 import { Icon } from 'astro-icon'
@@ -201,13 +202,22 @@ const day = differenceInDays(new Date(2022, 10, 30), new Date(Date.now()))
           </div>
         </div>
         <div class="flex flex-col gap-6 w-full p-5 bg-white rounded-2xl shadow-lg border">
-          <h3 class="text-2xl font-semibold text-tertiary">Business Plan</h3>
+          <h3 class="text-2xl font-semibold text-tertiary">Task and Scope</h3>
           <div class="flex gap-6 w-full flex-col text-neutral-700">
             <ul class="list-decimal pl-3">
-              <li class="font-semibold">Mahasiswa menciptakan rencana bisnis yang inovatif dan komprehensif yang diwujudkan dengan format yang dapat didownload dibawah ini</li>
+              <li class="font-semibold">Mahasiswa menyusun proposal bisnis dalam bentuk cetak</li>
               <ul class="my-4">
                 <a href="https://drive.google.com/file/d/1PCYMxq4G1EjwmiZ8HqkYwgFwbl1aITSz/view?usp=sharing" class="py-2 px-4 rounded-lg bg-secondary text-tertiary w-fit font-semibold flex gap-2 items-center">
                   <p>Format Dokumen Rencana Bisnis</p>
+                  <div class="w-5 h-5">
+                    <Icon name="ic:outline-file-download" />
+                  </div>
+                </a>
+              </ul>
+              <li class="font-semibold">Membuat presentasi pitch deck/powerpoint atas ide bisnis</li>
+              <ul class="my-4">
+                <a href="https://drive.google.com/file/d/1PCYMxq4G1EjwmiZ8HqkYwgFwbl1aITSz/view?usp=sharing" class="py-2 px-4 rounded-lg bg-secondary text-tertiary w-fit font-semibold flex gap-2 items-center">
+                  <p>Format Pitch Deck</p>
                   <div class="w-5 h-5">
                     <Icon name="ic:outline-file-download" />
                   </div>
@@ -239,123 +249,8 @@ const day = differenceInDays(new Date(2022, 10, 30), new Date(Date.now()))
         </div>
       </div>
       <div class="flex flex-col gap-6 w-full p-5 h-fit bg-white rounded-2xl shadow-lg border sticky top-0">
-        <h3 class="text-2xl font-semibold text-tertiary">Kriteria Penilaian Proposal Bisnis</h3>
-        <div class="flex gap-3 w-full flex-col text-neutral-700">
-          <div class="flex gap-5 items-center">
-            <div class="inline-flex items-center justify-center overflow-hidden rounded-full relative">
-              <svg class="w-20 h-20">
-                <circle class="text-gray-300" stroke-width="5" stroke="currentColor" fill="transparent" r="30" cx="40" cy="40"></circle>
-                <circle
-                  class="text-primary"
-                  stroke-width="5"
-                  stroke-dasharray={30 * 2 * Math.PI}
-                  stroke-dashoffset={30 * 2 * Math.PI - (25 / 100) * (30 * 2 * Math.PI)}
-                  stroke-linecap="round"
-                  stroke="currentColor"
-                  fill="transparent"
-                  r="30"
-                  cx="40"
-                  cy="40"></circle>
-              </svg>
-              <span class="absolute text-xl text-primar font-bold">25%</span>
-            </div>
-            <div class="flex flex-col">
-              <h4 class="font-semibold text-lg">Kreativitas</h4>
-              <p>a. Gagasan (keunikan dan kebermanfaatan)</p>
-              <p>b. Keunggulan Produk/Jasa</p>
-            </div>
-          </div>
-          <div class="flex gap-5 items-center">
-            <div class="inline-flex items-center justify-center overflow-hidden rounded-full relative">
-              <svg class="w-20 h-20">
-                <circle class="text-gray-300" stroke-width="5" stroke="currentColor" fill="transparent" r="30" cx="40" cy="40"></circle>
-                <circle
-                  class="text-primary"
-                  stroke-width="5"
-                  stroke-dasharray={30 * 2 * Math.PI}
-                  stroke-dashoffset={30 * 2 * Math.PI - (25 / 100) * (30 * 2 * Math.PI)}
-                  stroke-linecap="round"
-                  stroke="currentColor"
-                  fill="transparent"
-                  r="30"
-                  cx="40"
-                  cy="40"></circle>
-              </svg>
-              <span class="absolute text-xl text-primar font-bold">25%</span>
-            </div>
-            <div class="flex flex-col">
-              <h4 class="font-semibold text-lg">Peluang Pasar</h4>
-            </div>
-          </div>
-          <div class="flex gap-5 items-center">
-            <div class="inline-flex items-center justify-center overflow-hidden rounded-full relative">
-              <svg class="w-20 h-20">
-                <circle class="text-gray-300" stroke-width="5" stroke="currentColor" fill="transparent" r="30" cx="40" cy="40"></circle>
-                <circle
-                  class="text-primary"
-                  stroke-width="5"
-                  stroke-dasharray={30 * 2 * Math.PI}
-                  stroke-dashoffset={30 * 2 * Math.PI - (25 / 100) * (30 * 2 * Math.PI)}
-                  stroke-linecap="round"
-                  stroke="currentColor"
-                  fill="transparent"
-                  r="30"
-                  cx="40"
-                  cy="40"></circle>
-              </svg>
-              <span class="absolute text-xl text-primar font-bold">25%</span>
-            </div>
-            <div class="flex flex-col">
-              <h4 class="font-semibold text-lg">Potensi Program</h4>
-              <p>a. Potensi perolehan profit</p>
-              <p>b. Potensi keberlanjutan usaha</p>
-            </div>
-          </div>
-          <div class="flex gap-5 items-center">
-            <div class="inline-flex items-center justify-center overflow-hidden rounded-full relative">
-              <svg class="w-20 h-20">
-                <circle class="text-gray-300" stroke-width="5" stroke="currentColor" fill="transparent" r="30" cx="40" cy="40"></circle>
-                <circle
-                  class="text-primary"
-                  stroke-width="5"
-                  stroke-dasharray={30 * 2 * Math.PI}
-                  stroke-dashoffset={30 * 2 * Math.PI - (15 / 100) * (30 * 2 * Math.PI)}
-                  stroke-linecap="round"
-                  stroke="currentColor"
-                  fill="transparent"
-                  r="30"
-                  cx="40"
-                  cy="40"></circle>
-              </svg>
-              <span class="absolute text-xl text-primar font-bold">15%</span>
-            </div>
-            <div class="flex flex-col">
-              <h4 class="font-semibold text-lg">Timeline Bisnis</h4>
-            </div>
-          </div>
-          <div class="flex gap-5 items-center">
-            <div class="inline-flex items-center justify-center overflow-hidden rounded-full relative">
-              <svg class="w-20 h-20">
-                <circle class="text-gray-300" stroke-width="5" stroke="currentColor" fill="transparent" r="30" cx="40" cy="40"></circle>
-                <circle
-                  class="text-primary"
-                  stroke-width="5"
-                  stroke-dasharray={30 * 2 * Math.PI}
-                  stroke-dashoffset={30 * 2 * Math.PI - (15 / 100) * (30 * 2 * Math.PI)}
-                  stroke-linecap="round"
-                  stroke="currentColor"
-                  fill="transparent"
-                  r="30"
-                  cx="40"
-                  cy="40"></circle>
-              </svg>
-              <span class="absolute text-xl text-primar font-bold">15%</span>
-            </div>
-            <div class="flex flex-col">
-              <h4 class="font-semibold text-lg">Penyusunan Anggaran Biaya</h4>
-            </div>
-          </div>
-        </div>
+        <h3 class="text-2xl font-semibold text-tertiary">Kriteria Penilaian</h3>
+        <TermTab client:load />
       </div>
     </div>
   </div>
