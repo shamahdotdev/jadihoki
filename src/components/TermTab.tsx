@@ -236,7 +236,7 @@ export const TermTab = () => {
                   className="text-primary"
                   stroke-width="5"
                   stroke-dasharray={30 * 2 * Math.PI}
-                  stroke-dashoffset={30 * 2 * Math.PI - (15 / 100) * (30 * 2 * Math.PI)}
+                  stroke-dashoffset={30 * 2 * Math.PI - (10 / 100) * (30 * 2 * Math.PI)}
                   stroke-linecap="round"
                   stroke="currentColor"
                   fill="transparent"
@@ -245,7 +245,7 @@ export const TermTab = () => {
                   cy="40"
                 ></circle>
               </svg>
-              <span className="absolute text-xl text-primar font-bold">15%</span>
+              <span className="absolute text-xl text-primar font-bold">10%</span>
             </div>
             <div className="flex flex-col">
               <h4 className="font-semibold text-lg">Penyusunan Anggaran Biaya</h4>
