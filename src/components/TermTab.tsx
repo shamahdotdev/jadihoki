@@ -15,7 +15,7 @@ export const TermTab = () => {
       {showDeck ? (
         <div className="flex gap-3 w-full flex-col text-neutral-700">
           <div className="flex gap-5 items-center">
-            <div className="inline-flex items-center justify-center overflow-hidden rounded-full relative">
+            <div className="inline-flex items-center justify-center overflow-hidden rounded-full relative flex-shrink-0">
               <svg className="w-20 h-20">
                 <circle className="text-gray-300" stroke-width="5" stroke="currentColor" fill="transparent" r="30" cx="40" cy="40"></circle>
                 <circle
@@ -38,7 +38,7 @@ export const TermTab = () => {
             </div>
           </div>
           <div className="flex gap-5 items-center">
-            <div className="inline-flex items-center justify-center overflow-hidden rounded-full relative">
+            <div className="inline-flex items-center justify-center overflow-hidden rounded-full relative flex-shrink-0">
               <svg className="w-20 h-20">
                 <circle className="text-gray-300" stroke-width="5" stroke="currentColor" fill="transparent" r="30" cx="40" cy="40"></circle>
                 <circle
@@ -61,7 +61,7 @@ export const TermTab = () => {
             </div>
           </div>
           <div className="flex gap-5 items-center">
-            <div className="inline-flex items-center justify-center overflow-hidden rounded-full relative">
+            <div className="inline-flex items-center justify-center overflow-hidden rounded-full relative flex-shrink-0">
               <svg className="w-20 h-20">
                 <circle className="text-gray-300" stroke-width="5" stroke="currentColor" fill="transparent" r="30" cx="40" cy="40"></circle>
                 <circle
@@ -84,7 +84,7 @@ export const TermTab = () => {
             </div>
           </div>
           <div className="flex gap-5 items-center">
-            <div className="inline-flex items-center justify-center overflow-hidden rounded-full relative">
+            <div className="inline-flex items-center justify-center overflow-hidden rounded-full relative flex-shrink-0">
               <svg className="w-20 h-20">
                 <circle className="text-gray-300" stroke-width="5" stroke="currentColor" fill="transparent" r="30" cx="40" cy="40"></circle>
                 <circle
@@ -107,7 +107,7 @@ export const TermTab = () => {
             </div>
           </div>
           <div className="flex gap-5 items-center">
-            <div className="inline-flex items-center justify-center overflow-hidden rounded-full relative">
+            <div className="inline-flex items-center justify-center overflow-hidden rounded-full relative flex-shrink-0">
               <svg className="w-20 h-20">
                 <circle className="text-gray-300" stroke-width="5" stroke="currentColor" fill="transparent" r="30" cx="40" cy="40"></circle>
                 <circle
@@ -133,7 +133,7 @@ export const TermTab = () => {
       ) : (
         <div className="flex gap-3 w-full flex-col text-neutral-700">
           <div className="flex gap-5 items-center">
-            <div className="inline-flex items-center justify-center overflow-hidden rounded-full relative">
+            <div className="inline-flex items-center justify-center overflow-hidden rounded-full relative flex-shrink-0 flex-shrink-0">
               <svg className="w-20 h-20">
                 <circle className="text-gray-300" stroke-width="5" stroke="currentColor" fill="transparent" r="30" cx="40" cy="40"></circle>
                 <circle
@@ -158,7 +158,7 @@ export const TermTab = () => {
             </div>
           </div>
           <div className="flex gap-5 items-center">
-            <div className="inline-flex items-center justify-center overflow-hidden rounded-full relative">
+            <div className="inline-flex items-center justify-center overflow-hidden rounded-full relative flex-shrink-0">
               <svg className="w-20 h-20">
                 <circle className="text-gray-300" stroke-width="5" stroke="currentColor" fill="transparent" r="30" cx="40" cy="40"></circle>
                 <circle
@@ -181,7 +181,7 @@ export const TermTab = () => {
             </div>
           </div>
           <div className="flex gap-5 items-center">
-            <div className="inline-flex items-center justify-center overflow-hidden rounded-full relative">
+            <div className="inline-flex items-center justify-center overflow-hidden rounded-full relative flex-shrink-0">
               <svg className="w-20 h-20">
                 <circle className="text-gray-300" stroke-width="5" stroke="currentColor" fill="transparent" r="30" cx="40" cy="40"></circle>
                 <circle
@@ -206,7 +206,7 @@ export const TermTab = () => {
             </div>
           </div>
           <div className="flex gap-5 items-center">
-            <div className="inline-flex items-center justify-center overflow-hidden rounded-full relative">
+            <div className="inline-flex items-center justify-center overflow-hidden rounded-full relative flex-shrink-0">
               <svg className="w-20 h-20">
                 <circle className="text-gray-300" stroke-width="5" stroke="currentColor" fill="transparent" r="30" cx="40" cy="40"></circle>
                 <circle
@@ -229,7 +229,7 @@ export const TermTab = () => {
             </div>
           </div>
           <div className="flex gap-5 items-center">
-            <div className="inline-flex items-center justify-center overflow-hidden rounded-full relative">
+            <div className="inline-flex items-center justify-center overflow-hidden rounded-full relative flex-shrink-0">
               <svg className="w-20 h-20">
                 <circle className="text-gray-300" stroke-width="5" stroke="currentColor" fill="transparent" r="30" cx="40" cy="40"></circle>
                 <circle
