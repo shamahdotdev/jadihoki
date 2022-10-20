@@ -188,43 +188,6 @@ const day = differenceInDays(new Date(2022, 10, 30), new Date(Date.now()))
   <div class="bg-primary text-white flex py-12 w-full justify-center flex-col items-center px-3">
     <h2 id="term" class="text-3xl font-bold text-white">Ketentuan Kompetisi</h2>
     <div class="max-w-screen-xl flex flex-col md:flex-row justify-between w-full py-6 gap-6">
-      <div class="flex flex-col gap-6 w-full p-5 bg-white rounded-2xl shadow-lg border">
-        <h3 class="text-2xl font-semibold text-tertiary">Business Plan</h3>
-        <div class="flex gap-6 w-full flex-col text-neutral-700">
-          <ul class="list-decimal pl-3">
-            <li class="font-semibold">Mahasiswa menciptakan rencana bisnis yang inovatif dan komprehensif yang diwujudkan dengan format yang dapat didownload dibawah ini</li>
-            <ul class="my-4">
-              <a href="#" class="py-2 px-4 rounded-lg bg-secondary text-tertiary w-fit font-semibold flex gap-2 items-center">
-                <p>Format Dokumen Rencana Bisnis</p>
-                <div class="w-5 h-5">
-                  <Icon name="ic:outline-file-download" />
-                </div>
-              </a>
-            </ul>
-            <li class="font-semibold">Proposal harus orisinil karya pribadi dan belum pernah menjuarai kompetisi lain. Eligibilitas Proposal</li>
-            <ul class="list-disc pl-3 pt-2">
-              <li>Pernyataan orisinalitas bermaterai yang ditandatangani oleh anggota tim dan diketahui Perguruan Tinggi</li>
-              <ul class="my-4">
-                <a href="http://bit.ly/pernyataanhoki2" class="-ml-3 py-2 px-4 rounded-lg bg-secondary text-tertiary w-fit font-semibold flex gap-2 items-center">
-                  <p>Surat Pernyataan Orisinalitas</p>
-                  <div class="w-5 h-5">
-                    <Icon name="ic:outline-file-download" />
-                  </div>
-                </a>
-              </ul>
-              <li>Pernyataan bermaterai yang ditandatangani oleh Pejabat yang berwenang dari Perguruan Tinggi</li>
-              <ul class="my-4">
-                <a href="http://bit.ly/pernyataanhoki2" class="-ml-3 py-2 px-4 rounded-lg bg-secondary text-tertiary w-fit font-semibold flex gap-2 items-center">
-                  <p>Surat Pernyataan dari Perguruan Tinggi</p>
-                  <div class="w-5 h-5">
-                    <Icon name="ic:outline-file-download" />
-                  </div>
-                </a>
-              </ul>
-            </ul>
-          </ul>
-        </div>
-      </div>
       <div class="flex flex-col gap-6 w-full">
         <div class="flex flex-col gap-6 w-full p-5 bg-white rounded-2xl shadow-lg border">
           <h3 class="text-2xl font-semibold text-tertiary">Syarat Peserta</h3>
@@ -238,121 +201,158 @@ const day = differenceInDays(new Date(2022, 10, 30), new Date(Date.now()))
           </div>
         </div>
         <div class="flex flex-col gap-6 w-full p-5 bg-white rounded-2xl shadow-lg border">
-          <h3 class="text-2xl font-semibold text-tertiary">Kriteria Penilaian</h3>
-          <div class="flex gap-3 w-full flex-col text-neutral-700">
-            <div class="flex gap-5 items-center">
-              <div class="inline-flex items-center justify-center overflow-hidden rounded-full relative">
-                <svg class="w-20 h-20">
-                  <circle class="text-gray-300" stroke-width="5" stroke="currentColor" fill="transparent" r="30" cx="40" cy="40"></circle>
-                  <circle
-                    class="text-primary"
-                    stroke-width="5"
-                    stroke-dasharray={30 * 2 * Math.PI}
-                    stroke-dashoffset={30 * 2 * Math.PI - (25 / 100) * (30 * 2 * Math.PI)}
-                    stroke-linecap="round"
-                    stroke="currentColor"
-                    fill="transparent"
-                    r="30"
-                    cx="40"
-                    cy="40"></circle>
-                </svg>
-                <span class="absolute text-xl text-primar font-bold">25%</span>
-              </div>
-              <div class="flex flex-col">
-                <h4 class="font-semibold text-lg">Kreativitas</h4>
-                <p>a. Gagasan (keunikan dan kebermanfaatan)</p>
-                <p>b. Keunggulan Produk/Jasa</p>
-              </div>
+          <h3 class="text-2xl font-semibold text-tertiary">Business Plan</h3>
+          <div class="flex gap-6 w-full flex-col text-neutral-700">
+            <ul class="list-decimal pl-3">
+              <li class="font-semibold">Mahasiswa menciptakan rencana bisnis yang inovatif dan komprehensif yang diwujudkan dengan format yang dapat didownload dibawah ini</li>
+              <ul class="my-4">
+                <a href="https://drive.google.com/file/d/1PCYMxq4G1EjwmiZ8HqkYwgFwbl1aITSz/view?usp=sharing" class="py-2 px-4 rounded-lg bg-secondary text-tertiary w-fit font-semibold flex gap-2 items-center">
+                  <p>Format Dokumen Rencana Bisnis</p>
+                  <div class="w-5 h-5">
+                    <Icon name="ic:outline-file-download" />
+                  </div>
+                </a>
+              </ul>
+              <li class="font-semibold">Proposal harus orisinil karya pribadi dan belum pernah menjuarai kompetisi lain. Eligibilitas Proposal</li>
+              <ul class="list-disc pl-3 pt-2">
+                <li>Pernyataan orisinalitas bermaterai yang ditandatangani oleh anggota tim dan diketahui Perguruan Tinggi</li>
+                <ul class="my-4">
+                  <a href="http://bit.ly/pernyataanhoki2" class="-ml-3 py-2 px-4 rounded-lg bg-secondary text-tertiary w-fit font-semibold flex gap-2 items-center">
+                    <p>Surat Pernyataan Orisinalitas</p>
+                    <div class="w-5 h-5">
+                      <Icon name="ic:outline-file-download" />
+                    </div>
+                  </a>
+                </ul>
+                <li>Pernyataan bermaterai yang ditandatangani oleh Pejabat yang berwenang dari Perguruan Tinggi</li>
+                <ul class="my-4">
+                  <a href="http://bit.ly/pernyataanhoki2" class="-ml-3 py-2 px-4 rounded-lg bg-secondary text-tertiary w-fit font-semibold flex gap-2 items-center">
+                    <p>Surat Pernyataan dari Perguruan Tinggi</p>
+                    <div class="w-5 h-5">
+                      <Icon name="ic:outline-file-download" />
+                    </div>
+                  </a>
+                </ul>
+              </ul>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-col gap-6 w-full p-5 h-fit bg-white rounded-2xl shadow-lg border sticky top-0">
+        <h3 class="text-2xl font-semibold text-tertiary">Kriteria Penilaian</h3>
+        <div class="flex gap-3 w-full flex-col text-neutral-700">
+          <div class="flex gap-5 items-center">
+            <div class="inline-flex items-center justify-center overflow-hidden rounded-full relative">
+              <svg class="w-20 h-20">
+                <circle class="text-gray-300" stroke-width="5" stroke="currentColor" fill="transparent" r="30" cx="40" cy="40"></circle>
+                <circle
+                  class="text-primary"
+                  stroke-width="5"
+                  stroke-dasharray={30 * 2 * Math.PI}
+                  stroke-dashoffset={30 * 2 * Math.PI - (25 / 100) * (30 * 2 * Math.PI)}
+                  stroke-linecap="round"
+                  stroke="currentColor"
+                  fill="transparent"
+                  r="30"
+                  cx="40"
+                  cy="40"></circle>
+              </svg>
+              <span class="absolute text-xl text-primar font-bold">25%</span>
             </div>
-            <div class="flex gap-5 items-center">
-              <div class="inline-flex items-center justify-center overflow-hidden rounded-full relative">
-                <svg class="w-20 h-20">
-                  <circle class="text-gray-300" stroke-width="5" stroke="currentColor" fill="transparent" r="30" cx="40" cy="40"></circle>
-                  <circle
-                    class="text-primary"
-                    stroke-width="5"
-                    stroke-dasharray={30 * 2 * Math.PI}
-                    stroke-dashoffset={30 * 2 * Math.PI - (25 / 100) * (30 * 2 * Math.PI)}
-                    stroke-linecap="round"
-                    stroke="currentColor"
-                    fill="transparent"
-                    r="30"
-                    cx="40"
-                    cy="40"></circle>
-                </svg>
-                <span class="absolute text-xl text-primar font-bold">25%</span>
-              </div>
-              <div class="flex flex-col">
-                <h4 class="font-semibold text-lg">Peluang Pasar</h4>
-                <p>a. Potensi perolehan profit</p>
-                <p>b. Potensi keberlanjutan usaha</p>
-              </div>
+            <div class="flex flex-col">
+              <h4 class="font-semibold text-lg">Kreativitas</h4>
+              <p>a. Gagasan (keunikan dan kebermanfaatan)</p>
+              <p>b. Keunggulan Produk/Jasa</p>
             </div>
-            <div class="flex gap-5 items-center">
-              <div class="inline-flex items-center justify-center overflow-hidden rounded-full relative">
-                <svg class="w-20 h-20">
-                  <circle class="text-gray-300" stroke-width="5" stroke="currentColor" fill="transparent" r="30" cx="40" cy="40"></circle>
-                  <circle
-                    class="text-primary"
-                    stroke-width="5"
-                    stroke-dasharray={30 * 2 * Math.PI}
-                    stroke-dashoffset={30 * 2 * Math.PI - (25 / 100) * (30 * 2 * Math.PI)}
-                    stroke-linecap="round"
-                    stroke="currentColor"
-                    fill="transparent"
-                    r="30"
-                    cx="40"
-                    cy="40"></circle>
-                </svg>
-                <span class="absolute text-xl text-primar font-bold">25%</span>
-              </div>
-              <div class="flex flex-col">
-                <h4 class="font-semibold text-lg">Potensi Program</h4>
-              </div>
+          </div>
+          <div class="flex gap-5 items-center">
+            <div class="inline-flex items-center justify-center overflow-hidden rounded-full relative">
+              <svg class="w-20 h-20">
+                <circle class="text-gray-300" stroke-width="5" stroke="currentColor" fill="transparent" r="30" cx="40" cy="40"></circle>
+                <circle
+                  class="text-primary"
+                  stroke-width="5"
+                  stroke-dasharray={30 * 2 * Math.PI}
+                  stroke-dashoffset={30 * 2 * Math.PI - (25 / 100) * (30 * 2 * Math.PI)}
+                  stroke-linecap="round"
+                  stroke="currentColor"
+                  fill="transparent"
+                  r="30"
+                  cx="40"
+                  cy="40"></circle>
+              </svg>
+              <span class="absolute text-xl text-primar font-bold">25%</span>
             </div>
-            <div class="flex gap-5 items-center">
-              <div class="inline-flex items-center justify-center overflow-hidden rounded-full relative">
-                <svg class="w-20 h-20">
-                  <circle class="text-gray-300" stroke-width="5" stroke="currentColor" fill="transparent" r="30" cx="40" cy="40"></circle>
-                  <circle
-                    class="text-primary"
-                    stroke-width="5"
-                    stroke-dasharray={30 * 2 * Math.PI}
-                    stroke-dashoffset={30 * 2 * Math.PI - (15 / 100) * (30 * 2 * Math.PI)}
-                    stroke-linecap="round"
-                    stroke="currentColor"
-                    fill="transparent"
-                    r="30"
-                    cx="40"
-                    cy="40"></circle>
-                </svg>
-                <span class="absolute text-xl text-primar font-bold">15%</span>
-              </div>
-              <div class="flex flex-col">
-                <h4 class="font-semibold text-lg">Timeline Bisnis</h4>
-              </div>
+            <div class="flex flex-col">
+              <h4 class="font-semibold text-lg">Peluang Pasar</h4>
             </div>
-            <div class="flex gap-5 items-center">
-              <div class="inline-flex items-center justify-center overflow-hidden rounded-full relative">
-                <svg class="w-20 h-20">
-                  <circle class="text-gray-300" stroke-width="5" stroke="currentColor" fill="transparent" r="30" cx="40" cy="40"></circle>
-                  <circle
-                    class="text-primary"
-                    stroke-width="5"
-                    stroke-dasharray={30 * 2 * Math.PI}
-                    stroke-dashoffset={30 * 2 * Math.PI - (15 / 100) * (30 * 2 * Math.PI)}
-                    stroke-linecap="round"
-                    stroke="currentColor"
-                    fill="transparent"
-                    r="30"
-                    cx="40"
-                    cy="40"></circle>
-                </svg>
-                <span class="absolute text-xl text-primar font-bold">15%</span>
-              </div>
-              <div class="flex flex-col">
-                <h4 class="font-semibold text-lg">Penyusunan Anggaran Biaya</h4>
-              </div>
+          </div>
+          <div class="flex gap-5 items-center">
+            <div class="inline-flex items-center justify-center overflow-hidden rounded-full relative">
+              <svg class="w-20 h-20">
+                <circle class="text-gray-300" stroke-width="5" stroke="currentColor" fill="transparent" r="30" cx="40" cy="40"></circle>
+                <circle
+                  class="text-primary"
+                  stroke-width="5"
+                  stroke-dasharray={30 * 2 * Math.PI}
+                  stroke-dashoffset={30 * 2 * Math.PI - (25 / 100) * (30 * 2 * Math.PI)}
+                  stroke-linecap="round"
+                  stroke="currentColor"
+                  fill="transparent"
+                  r="30"
+                  cx="40"
+                  cy="40"></circle>
+              </svg>
+              <span class="absolute text-xl text-primar font-bold">25%</span>
+            </div>
+            <div class="flex flex-col">
+              <h4 class="font-semibold text-lg">Potensi Program</h4>
+              <p>a. Potensi perolehan profit</p>
+              <p>b. Potensi keberlanjutan usaha</p>
+            </div>
+          </div>
+          <div class="flex gap-5 items-center">
+            <div class="inline-flex items-center justify-center overflow-hidden rounded-full relative">
+              <svg class="w-20 h-20">
+                <circle class="text-gray-300" stroke-width="5" stroke="currentColor" fill="transparent" r="30" cx="40" cy="40"></circle>
+                <circle
+                  class="text-primary"
+                  stroke-width="5"
+                  stroke-dasharray={30 * 2 * Math.PI}
+                  stroke-dashoffset={30 * 2 * Math.PI - (15 / 100) * (30 * 2 * Math.PI)}
+                  stroke-linecap="round"
+                  stroke="currentColor"
+                  fill="transparent"
+                  r="30"
+                  cx="40"
+                  cy="40"></circle>
+              </svg>
+              <span class="absolute text-xl text-primar font-bold">15%</span>
+            </div>
+            <div class="flex flex-col">
+              <h4 class="font-semibold text-lg">Timeline Bisnis</h4>
+            </div>
+          </div>
+          <div class="flex gap-5 items-center">
+            <div class="inline-flex items-center justify-center overflow-hidden rounded-full relative">
+              <svg class="w-20 h-20">
+                <circle class="text-gray-300" stroke-width="5" stroke="currentColor" fill="transparent" r="30" cx="40" cy="40"></circle>
+                <circle
+                  class="text-primary"
+                  stroke-width="5"
+                  stroke-dasharray={30 * 2 * Math.PI}
+                  stroke-dashoffset={30 * 2 * Math.PI - (15 / 100) * (30 * 2 * Math.PI)}
+                  stroke-linecap="round"
+                  stroke="currentColor"
+                  fill="transparent"
+                  r="30"
+                  cx="40"
+                  cy="40"></circle>
+              </svg>
+              <span class="absolute text-xl text-primar font-bold">15%</span>
+            </div>
+            <div class="flex flex-col">
+              <h4 class="font-semibold text-lg">Penyusunan Anggaran Biaya</h4>
             </div>
           </div>
         </div>
@@ -363,13 +363,13 @@ const day = differenceInDays(new Date(2022, 10, 30), new Date(Date.now()))
   <div class="bg-tertiary text-white flex py-16 w-full justify-center flex-col items-center px-3">
     <h2 id="benefit" class="text-3xl font-bold text-white">Keuntungan mengikuti Kompetisi HoKi</h2>
     <div class="max-w-screen-xl flex flex-col md:flex-row justify-between w-full py-6 gap-6 relative">
-      <div class="flex gap-3 w-full p-5 bg-white rounded-2xl shadow-lg">
+      <div class="flex gap-3 w-full p-5 bg-white rounded-2xl shadow-lg h-fit">
         <div class="bg-primary p-3 h-fit rounded-full">
           <div class="w-6 h-6 text-white">
             <Icon name="ic:round-attach-money" />
           </div>
         </div>
-        <div class="flex flex-col gap-1">
+        <div class="flex flex-col gap-1 min-h-[110px] h-fit">
           <h4 class="text-lg text-tertiary font-semibold">Hibah Dana</h4>
           <p class="text-neutral-700">Hibah dana per proposal Rp30 juta masing-masing untuk 10 Tim Pemenang Pelatihan</p>
         </div>
@@ -381,7 +381,7 @@ const day = differenceInDays(new Date(2022, 10, 30), new Date(Date.now()))
               <Icon name="ic:round-people" />
             </div>
           </div>
-          <div class="flex flex-col gap-1">
+          <div class="flex flex-col gap-1 min-h-[110px] h-fit">
             <h4 class="text-lg text-tertiary font-semibold">Program Pembinaan</h4>
             <div class="flex flex-col">
               <p class="text-neutral-700">a. Pendampingan kewirausahaan selama 3 bulan</p>
