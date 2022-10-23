@@ -21,9 +21,9 @@ export const TermTab = () => {
                 <circle
                   className="text-primary"
                   stroke-width="5"
-                  stroke-dasharray={30 * 2 * Math.PI}
-                  stroke-dashoffset={30 * 2 * Math.PI - (20 / 100) * (30 * 2 * Math.PI)}
-                  stroke-linecap="round"
+                  strokeDasharray={30 * 2 * Math.PI}
+                  strokeDashoffset={30 * 2 * Math.PI - (20 / 100) * (30 * 2 * Math.PI)}
+                  strokeLinecap="round"
                   stroke="currentColor"
                   fill="transparent"
                   r="30"
@@ -44,9 +44,9 @@ export const TermTab = () => {
                 <circle
                   className="text-primary"
                   stroke-width="5"
-                  stroke-dasharray={30 * 2 * Math.PI}
-                  stroke-dashoffset={30 * 2 * Math.PI - (30 / 100) * (30 * 2 * Math.PI)}
-                  stroke-linecap="round"
+                  strokeDasharray={30 * 2 * Math.PI}
+                  strokeDashoffset={30 * 2 * Math.PI - (30 / 100) * (30 * 2 * Math.PI)}
+                  strokeLinecap="round"
                   stroke="currentColor"
                   fill="transparent"
                   r="30"
@@ -67,9 +67,9 @@ export const TermTab = () => {
                 <circle
                   className="text-primary"
                   stroke-width="5"
-                  stroke-dasharray={30 * 2 * Math.PI}
-                  stroke-dashoffset={30 * 2 * Math.PI - (15 / 100) * (30 * 2 * Math.PI)}
-                  stroke-linecap="round"
+                  strokeDasharray={30 * 2 * Math.PI}
+                  strokeDashoffset={30 * 2 * Math.PI - (15 / 100) * (30 * 2 * Math.PI)}
+                  strokeLinecap="round"
                   stroke="currentColor"
                   fill="transparent"
                   r="30"
@@ -90,9 +90,9 @@ export const TermTab = () => {
                 <circle
                   className="text-primary"
                   stroke-width="5"
-                  stroke-dasharray={30 * 2 * Math.PI}
-                  stroke-dashoffset={30 * 2 * Math.PI - (5 / 100) * (30 * 2 * Math.PI)}
-                  stroke-linecap="round"
+                  strokeDasharray={30 * 2 * Math.PI}
+                  strokeDashoffset={30 * 2 * Math.PI - (5 / 100) * (30 * 2 * Math.PI)}
+                  strokeLinecap="round"
                   stroke="currentColor"
                   fill="transparent"
                   r="30"
@@ -113,9 +113,9 @@ export const TermTab = () => {
                 <circle
                   className="text-primary"
                   stroke-width="5"
-                  stroke-dasharray={30 * 2 * Math.PI}
-                  stroke-dashoffset={30 * 2 * Math.PI - (30 / 100) * (30 * 2 * Math.PI)}
-                  stroke-linecap="round"
+                  strokeDasharray={30 * 2 * Math.PI}
+                  strokeDashoffset={30 * 2 * Math.PI - (30 / 100) * (30 * 2 * Math.PI)}
+                  strokeLinecap="round"
                   stroke="currentColor"
                   fill="transparent"
                   r="30"
@@ -139,9 +139,9 @@ export const TermTab = () => {
                 <circle
                   className="text-primary"
                   stroke-width="5"
-                  stroke-dasharray={30 * 2 * Math.PI}
-                  stroke-dashoffset={30 * 2 * Math.PI - (25 / 100) * (30 * 2 * Math.PI)}
-                  stroke-linecap="round"
+                  strokeDasharray={30 * 2 * Math.PI}
+                  strokeDashoffset={30 * 2 * Math.PI - (25 / 100) * (30 * 2 * Math.PI)}
+                  strokeLinecap="round"
                   stroke="currentColor"
                   fill="transparent"
                   r="30"
@@ -164,9 +164,9 @@ export const TermTab = () => {
                 <circle
                   className="text-primary"
                   stroke-width="5"
-                  stroke-dasharray={30 * 2 * Math.PI}
-                  stroke-dashoffset={30 * 2 * Math.PI - (25 / 100) * (30 * 2 * Math.PI)}
-                  stroke-linecap="round"
+                  strokeDasharray={30 * 2 * Math.PI}
+                  strokeDashoffset={30 * 2 * Math.PI - (25 / 100) * (30 * 2 * Math.PI)}
+                  strokeLinecap="round"
                   stroke="currentColor"
                   fill="transparent"
                   r="30"
@@ -187,9 +187,9 @@ export const TermTab = () => {
                 <circle
                   className="text-primary"
                   stroke-width="5"
-                  stroke-dasharray={30 * 2 * Math.PI}
-                  stroke-dashoffset={30 * 2 * Math.PI - (25 / 100) * (30 * 2 * Math.PI)}
-                  stroke-linecap="round"
+                  strokeDasharray={30 * 2 * Math.PI}
+                  strokeDashoffset={30 * 2 * Math.PI - (25 / 100) * (30 * 2 * Math.PI)}
+                  strokeLinecap="round"
                   stroke="currentColor"
                   fill="transparent"
                   r="30"
@@ -212,9 +212,9 @@ export const TermTab = () => {
                 <circle
                   className="text-primary"
                   stroke-width="5"
-                  stroke-dasharray={30 * 2 * Math.PI}
-                  stroke-dashoffset={30 * 2 * Math.PI - (15 / 100) * (30 * 2 * Math.PI)}
-                  stroke-linecap="round"
+                  strokeDasharray={30 * 2 * Math.PI}
+                  strokeDashoffset={30 * 2 * Math.PI - (15 / 100) * (30 * 2 * Math.PI)}
+                  strokeLinecap="round"
                   stroke="currentColor"
                   fill="transparent"
                   r="30"
@@ -235,9 +235,9 @@ export const TermTab = () => {
                 <circle
                   className="text-primary"
                   stroke-width="5"
-                  stroke-dasharray={30 * 2 * Math.PI}
-                  stroke-dashoffset={30 * 2 * Math.PI - (10 / 100) * (30 * 2 * Math.PI)}
-                  stroke-linecap="round"
+                  strokeDasharray={30 * 2 * Math.PI}
+                  strokeDashoffset={30 * 2 * Math.PI - (10 / 100) * (30 * 2 * Math.PI)}
+                  strokeLinecap="round"
                   stroke="currentColor"
                   fill="transparent"
                   r="30"
