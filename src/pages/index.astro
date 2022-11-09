@@ -26,7 +26,7 @@ const day = differenceInDays(new Date(2022, 10, 30), new Date(Date.now()))
   </div>
 
   <div class="bg-neutral-100 flex w-full justify-center px-6">
-    <div class="flex flex-col gap-6">
+    <div class="flex flex-col gap-6 w-full justify-center max-w-screen-xl">
       <div class="flex flex-col -mt-16 md:flex-row sm:items-center md:justify-between gap-6 w-full px-5 py-10 bg-white text-neutral-800 rounded-2xl shadow-lg max-w-screen-xl relative">
         <div class="flex flex-col sm:flex-row gap-6">
           <h4 class="text-4xl text-tertiary font-bold">{day > 0 ? day + ' Hari Lagi' : 'Hari ini'}</h4>
@@ -40,28 +40,51 @@ const day = differenceInDays(new Date(2022, 10, 30), new Date(Date.now()))
           <a href="https://s.id/torhoki" class="py-4 px-8 rounded-xl bg-white border-primary border-2 text-tertiary w-fit font-semibold">Term of Reference</a>
         </div>
       </div>
-      <div class="flex flex-col gap-6 w-full max-w-screen-xl relative py-12">
-        <div class="flex flex-col w-full items-center gap-6">
-          <div class="flex flex-col md:flex-row gap-6 justify-between w-full">
+      <div class="flex flex-col gap-6 w-full relative py-12">
+        <div class="flex flex-col md:flex-row justify-between w-full gap-6">
+          <div class="flex flex-col gap-6 w-full">
             <div class="flex flex-col gap-3">
-              <h3 id="event" class="text-4xl font-semibold text-tertiary">Kick Off</h3>
+              <h3 id="event" class="text-4xl font-semibold text-tertiary">Campus Roadshow</h3>
               <p class="text-3xl font-bold text-neutral-700">#CiptakanPeluang</p>
-              <span class="py-2 px-5 bg-primary w-fit font-semibold rounded-lg text-white">BISNIS MAHASISWA, SIAP MENDUNIA</span>
             </div>
-            <div class="flex flex-col gap-6 max-w-md">
-              <div class="py-2 px-5 bg-tertiary font-semibold rounded-lg text-white">
-                <p class="text-3xl font-semibold">24 Oktober 2022</p>
-                <p class="text-xl font-bold">SPACE RELIEF SARINAH</p>
-                <p>15.00 - 17.30 WIB</p>
-              </div>
-              <p>
-                Talkshow sebagai ignition kepada calon peserta agar mendapatkan motivasi dan juga tujuan yang jelas dalam berpartisipasi kegiatan. Setelah talkshow dilakukan seremonial kick off pembukaan pendaftaran
-                untuk kompetisi bisnis mahasiswa.
+            <Image src={import('../assets/images/bus.png')} alt="Jumbotron" height={400} width={480} />
+          </div>
+          <div class="flex flex-col gap-6 w-full">
+            <p class="text-3xl font-bold text-tertiary">Pendaftaran Peserta Roadshow HoKi</p>
+
+            <div class="flex gap-6 w-full flex-col text-neutral-700">
+              <p class="text-justify">Halo Mahasiswa dan seluruh Civitas Perguruan Tinggi di DKI Jakarta!</p>
+              <p class="text-justify">
+                Dalam rangka penyelenggaraan HoKi Season 2, ISEI Jakarta dan PT Pegadaian akan melakukan Roadshow ke beberapa Perguruan Tinggi di DKI Jakarta. Kegiatan ini diadakan secara daring (online) dan bertujuan
+                untuk memberikan informasi lebih detail terkait HoKi dan mengajak para mahasiswa serta pihak Perguruan Tinggi untuk berpartisipasi dalam kegiatan HoKi Season 2.
               </p>
             </div>
+            <a href="https://s.id/pesertaroadshowhoki" class="py-4 px-8 rounded-xl bg-secondary text-tertiary w-fit font-semibold my-4">Daftar Roadshow</a>
+
+            <p class="text-2xl font-semibold text-tertiary">Keuntungan Mengikuti Campus Roadshow HoKi</p>
+            <div class="flex flex-col gap-4">
+              <div class="flex gap-3 w-full p-5 bg-white rounded-2xl shadow-lg h-fit items-center">
+                <div class="bg-primary p-3 h-fit rounded-full">
+                  <div class="w-6 h-6 text-white">
+                    <Icon name="ri:medal-fill" />
+                  </div>
+                </div>
+                <div class="flex flex-col gap-1 h-fit items">
+                  <h4 class="text-lg text-tertiary font-semibold">Plakat Penghargaan Kampus</h4>
+                </div>
+              </div>
+              <div class="flex gap-3 w-full p-5 bg-white rounded-2xl shadow-lg h-fit items-center">
+                <div class="bg-primary p-3 h-fit rounded-full">
+                  <div class="w-6 h-6 text-white">
+                    <Icon name="mdi:certificate" />
+                  </div>
+                </div>
+                <div class="flex flex-col gap-1 h-fit items">
+                  <h4 class="text-lg text-tertiary font-semibold">Sertifikat</h4>
+                </div>
+              </div>
+            </div>
           </div>
-          <Image class="flex flex-shrink-0 object-contain bg-white px-2 py-4 rounded-xl" src={import('../assets/images/event.png')} alt="Kick Off Event 24 Oktober 2022" />
-          <a href="https://s.id/sosialisasihoki" class="py-4 px-8 rounded-xl bg-secondary text-tertiary w-fit font-semibold">Daftar Event</a>
         </div>
       </div>
     </div>
@@ -206,23 +229,23 @@ const day = differenceInDays(new Date(2022, 10, 30), new Date(Date.now()))
           <div class="flex gap-6 w-full flex-col text-neutral-700">
             <ul class="list-decimal pl-3">
               <li class="font-semibold">Mahasiswa menyusun proposal bisnis</li>
-              <!-- <ul class="my-4">
-                <a href="https://drive.google.com/file/d/1PCYMxq4G1EjwmiZ8HqkYwgFwbl1aITSz/view?usp=sharing" class="py-2 px-4 rounded-lg bg-secondary text-tertiary w-fit font-semibold flex gap-2 items-center">
+              <ul class="my-4">
+                <a href="https://s.id/panduanproposalbisnis" class="py-2 px-4 rounded-lg bg-secondary text-tertiary w-fit font-semibold flex gap-2 items-center">
                   <p>Format Dokumen Rencana Bisnis</p>
                   <div class="w-5 h-5">
                     <Icon name="ic:outline-file-download" />
                   </div>
                 </a>
-              </ul> -->
+              </ul>
               <li class="font-semibold">Membuat presentasi pitch deck/powerpoint atas ide bisnis</li>
-              <!-- <ul class="my-4">
-                <a href="https://drive.google.com/file/d/1PCYMxq4G1EjwmiZ8HqkYwgFwbl1aITSz/view?usp=sharing" class="py-2 px-4 rounded-lg bg-secondary text-tertiary w-fit font-semibold flex gap-2 items-center">
+              <ul class="my-4">
+                <a href="https://s.id/panduanpitchdeck" class="py-2 px-4 rounded-lg bg-secondary text-tertiary w-fit font-semibold flex gap-2 items-center">
                   <p>Format Pitch Deck</p>
                   <div class="w-5 h-5">
                     <Icon name="ic:outline-file-download" />
                   </div>
                 </a>
-              </ul> -->
+              </ul>
               <li class="font-semibold">Proposal harus orisinil karya pribadi dan belum pernah menjuarai kompetisi lain. Eligibilitas Proposal</li>
               <ul class="list-disc pl-3 pt-2">
                 <li>Pernyataan orisinalitas bermaterai yang ditandatangani oleh anggota tim dan diketahui Perguruan Tinggi</li>
@@ -300,7 +323,7 @@ const day = differenceInDays(new Date(2022, 10, 30), new Date(Date.now()))
         <div class="flex gap-6 w-full flex-col text-neutral-700 max-w-lg">
           <p class="text-justify">
             Penyelenggaraan Hibah Kompetisi Kewirausahaan (HoKi) tahun 2022 oleh Ikatan Sarjana Ekonomi Indonesia (ISEI) Jakarta yang didukung oleh PT Pegadaian sangat relevan dan dapat turut berperan dalam upaya
-            mengakselerasi pencetakan wirausaha baru serta menumbuhkembangkan UMKM di Indonesia. Oleh Karena itu ISEI Jakarta bersama PT Pegadaian kembali akan menyelenggarakan
+            mengakselerasi pencetakan wirausaha baru serta menumbuhkembangkan UMKM di Indonesia.
           </p>
           <p class="text-justify">
             Kegiatan HoKi pada tahun 2022 (Season 2). Hal ini juga tidak terlepas dari keberhasilan pilot project pada kegiatan Hibah Kompetisi Kewirausahaan (HoKi) sebelumnya pada 2021, yang juga melibatkan Perguruan
@@ -315,5 +338,32 @@ const day = differenceInDays(new Date(2022, 10, 30), new Date(Date.now()))
       </div>
     </div>
   </div>
+  <div class="bg-neutral-100 flex w-full justify-center px-6">
+    <div class="flex flex-col gap-6 w-full max-w-screen-xl relative py-12">
+      <div class="flex flex-col w-full items-center gap-6">
+        <div class="flex flex-col md:flex-row gap-6 justify-between w-full">
+          <div class="flex flex-col gap-3">
+            <h3 id="event" class="text-4xl font-semibold text-tertiary">Kick Off</h3>
+            <p class="text-3xl font-bold text-neutral-700">#CiptakanPeluang</p>
+            <span class="py-2 px-5 bg-primary w-fit font-semibold rounded-lg text-white">BISNIS MAHASISWA, SIAP MENDUNIA</span>
+          </div>
+          <div class="flex flex-col gap-6 max-w-md">
+            <div class="py-2 px-5 bg-tertiary font-semibold rounded-lg text-white">
+              <p class="text-3xl font-semibold">24 Oktober 2022</p>
+              <p class="text-xl font-bold">SPACE RELIEF SARINAH</p>
+              <p>15.00 - 17.30 WIB</p>
+            </div>
+            <p>
+              Talkshow sebagai ignition kepada calon peserta agar mendapatkan motivasi dan juga tujuan yang jelas dalam berpartisipasi kegiatan. Setelah talkshow dilakukan seremonial kick off pembukaan pendaftaran untuk
+              kompetisi bisnis mahasiswa.
+            </p>
+          </div>
+        </div>
+        <Image class="flex flex-shrink-0 object-contain bg-white px-2 py-4 rounded-xl" src={import('../assets/images/event.png')} alt="Kick Off Event 24 Oktober 2022" />
+        <a href="https://s.id/sosialisasihoki" class="py-4 px-8 rounded-xl bg-secondary text-tertiary w-fit font-semibold">Daftar Event</a>
+      </div>
+    </div>
+  </div>
+
   <Footer />
 </Layout>

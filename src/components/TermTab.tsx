@@ -17,10 +17,10 @@ export const TermTab = () => {
           <div className="flex gap-5 items-center">
             <div className="inline-flex items-center justify-center overflow-hidden rounded-full relative flex-shrink-0">
               <svg className="w-20 h-20">
-                <circle className="text-gray-300" stroke-width="5" stroke="currentColor" fill="transparent" r="30" cx="40" cy="40"></circle>
+                <circle className="text-gray-300" strokeWidth="5" stroke="currentColor" fill="transparent" r="30" cx="40" cy="40"></circle>
                 <circle
                   className="text-primary"
-                  stroke-width="5"
+                  strokeWidth="5"
                   strokeDasharray={30 * 2 * Math.PI}
                   strokeDashoffset={30 * 2 * Math.PI - (20 / 100) * (30 * 2 * Math.PI)}
                   strokeLinecap="round"
@@ -40,10 +40,10 @@ export const TermTab = () => {
           <div className="flex gap-5 items-center">
             <div className="inline-flex items-center justify-center overflow-hidden rounded-full relative flex-shrink-0">
               <svg className="w-20 h-20">
-                <circle className="text-gray-300" stroke-width="5" stroke="currentColor" fill="transparent" r="30" cx="40" cy="40"></circle>
+                <circle className="text-gray-300" strokeWidth="5" stroke="currentColor" fill="transparent" r="30" cx="40" cy="40"></circle>
                 <circle
                   className="text-primary"
-                  stroke-width="5"
+                  strokeWidth="5"
                   strokeDasharray={30 * 2 * Math.PI}
                   strokeDashoffset={30 * 2 * Math.PI - (30 / 100) * (30 * 2 * Math.PI)}
                   strokeLinecap="round"
@@ -63,10 +63,10 @@ export const TermTab = () => {
           <div className="flex gap-5 items-center">
             <div className="inline-flex items-center justify-center overflow-hidden rounded-full relative flex-shrink-0">
               <svg className="w-20 h-20">
-                <circle className="text-gray-300" stroke-width="5" stroke="currentColor" fill="transparent" r="30" cx="40" cy="40"></circle>
+                <circle className="text-gray-300" strokeWidth="5" stroke="currentColor" fill="transparent" r="30" cx="40" cy="40"></circle>
                 <circle
                   className="text-primary"
-                  stroke-width="5"
+                  strokeWidth="5"
                   strokeDasharray={30 * 2 * Math.PI}
                   strokeDashoffset={30 * 2 * Math.PI - (15 / 100) * (30 * 2 * Math.PI)}
                   strokeLinecap="round"
@@ -86,10 +86,10 @@ export const TermTab = () => {
           <div className="flex gap-5 items-center">
             <div className="inline-flex items-center justify-center overflow-hidden rounded-full relative flex-shrink-0">
               <svg className="w-20 h-20">
-                <circle className="text-gray-300" stroke-width="5" stroke="currentColor" fill="transparent" r="30" cx="40" cy="40"></circle>
+                <circle className="text-gray-300" strokeWidth="5" stroke="currentColor" fill="transparent" r="30" cx="40" cy="40"></circle>
                 <circle
                   className="text-primary"
-                  stroke-width="5"
+                  strokeWidth="5"
                   strokeDasharray={30 * 2 * Math.PI}
                   strokeDashoffset={30 * 2 * Math.PI - (5 / 100) * (30 * 2 * Math.PI)}
                   strokeLinecap="round"
@@ -109,10 +109,10 @@ export const TermTab = () => {
           <div className="flex gap-5 items-center">
             <div className="inline-flex items-center justify-center overflow-hidden rounded-full relative flex-shrink-0">
               <svg className="w-20 h-20">
-                <circle className="text-gray-300" stroke-width="5" stroke="currentColor" fill="transparent" r="30" cx="40" cy="40"></circle>
+                <circle className="text-gray-300" strokeWidth="5" stroke="currentColor" fill="transparent" r="30" cx="40" cy="40"></circle>
                 <circle
                   className="text-primary"
-                  stroke-width="5"
+                  strokeWidth="5"
                   strokeDasharray={30 * 2 * Math.PI}
                   strokeDashoffset={30 * 2 * Math.PI - (30 / 100) * (30 * 2 * Math.PI)}
                   strokeLinecap="round"
@@ -135,10 +135,10 @@ export const TermTab = () => {
           <div className="flex gap-5 items-center">
             <div className="inline-flex items-center justify-center overflow-hidden rounded-full relative flex-shrink-0 flex-shrink-0">
               <svg className="w-20 h-20">
-                <circle className="text-gray-300" stroke-width="5" stroke="currentColor" fill="transparent" r="30" cx="40" cy="40"></circle>
+                <circle className="text-gray-300" strokeWidth="5" stroke="currentColor" fill="transparent" r="30" cx="40" cy="40"></circle>
                 <circle
                   className="text-primary"
-                  stroke-width="5"
+                  strokeWidth="5"
                   strokeDasharray={30 * 2 * Math.PI}
                   strokeDashoffset={30 * 2 * Math.PI - (25 / 100) * (30 * 2 * Math.PI)}
                   strokeLinecap="round"
@@ -160,10 +160,10 @@ export const TermTab = () => {
           <div className="flex gap-5 items-center">
             <div className="inline-flex items-center justify-center overflow-hidden rounded-full relative flex-shrink-0">
               <svg className="w-20 h-20">
-                <circle className="text-gray-300" stroke-width="5" stroke="currentColor" fill="transparent" r="30" cx="40" cy="40"></circle>
+                <circle className="text-gray-300" strokeWidth="5" stroke="currentColor" fill="transparent" r="30" cx="40" cy="40"></circle>
                 <circle
                   className="text-primary"
-                  stroke-width="5"
+                  strokeWidth="5"
                   strokeDasharray={30 * 2 * Math.PI}
                   strokeDashoffset={30 * 2 * Math.PI - (25 / 100) * (30 * 2 * Math.PI)}
                   strokeLinecap="round"
@@ -183,10 +183,10 @@ export const TermTab = () => {
           <div className="flex gap-5 items-center">
             <div className="inline-flex items-center justify-center overflow-hidden rounded-full relative flex-shrink-0">
               <svg className="w-20 h-20">
-                <circle className="text-gray-300" stroke-width="5" stroke="currentColor" fill="transparent" r="30" cx="40" cy="40"></circle>
+                <circle className="text-gray-300" strokeWidth="5" stroke="currentColor" fill="transparent" r="30" cx="40" cy="40"></circle>
                 <circle
                   className="text-primary"
-                  stroke-width="5"
+                  strokeWidth="5"
                   strokeDasharray={30 * 2 * Math.PI}
                   strokeDashoffset={30 * 2 * Math.PI - (25 / 100) * (30 * 2 * Math.PI)}
                   strokeLinecap="round"
@@ -208,10 +208,10 @@ export const TermTab = () => {
           <div className="flex gap-5 items-center">
             <div className="inline-flex items-center justify-center overflow-hidden rounded-full relative flex-shrink-0">
               <svg className="w-20 h-20">
-                <circle className="text-gray-300" stroke-width="5" stroke="currentColor" fill="transparent" r="30" cx="40" cy="40"></circle>
+                <circle className="text-gray-300" strokeWidth="5" stroke="currentColor" fill="transparent" r="30" cx="40" cy="40"></circle>
                 <circle
                   className="text-primary"
-                  stroke-width="5"
+                  strokeWidth="5"
                   strokeDasharray={30 * 2 * Math.PI}
                   strokeDashoffset={30 * 2 * Math.PI - (15 / 100) * (30 * 2 * Math.PI)}
                   strokeLinecap="round"
@@ -231,10 +231,10 @@ export const TermTab = () => {
           <div className="flex gap-5 items-center">
             <div className="inline-flex items-center justify-center overflow-hidden rounded-full relative flex-shrink-0">
               <svg className="w-20 h-20">
-                <circle className="text-gray-300" stroke-width="5" stroke="currentColor" fill="transparent" r="30" cx="40" cy="40"></circle>
+                <circle className="text-gray-300" strokeWidth="5" stroke="currentColor" fill="transparent" r="30" cx="40" cy="40"></circle>
                 <circle
                   className="text-primary"
-                  stroke-width="5"
+                  strokeWidth="5"
                   strokeDasharray={30 * 2 * Math.PI}
                   strokeDashoffset={30 * 2 * Math.PI - (10 / 100) * (30 * 2 * Math.PI)}
                   strokeLinecap="round"
