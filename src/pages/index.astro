@@ -6,10 +6,7 @@ import { TermTab } from '../components/TermTab.jsx'
 import { Image } from '@astrojs/image/components'
 import Footer from '../components/Footer.astro'
 import { Icon } from 'astro-icon'
-
-import differenceInDays from 'date-fns/differenceInDays/index.js'
-
-const day = differenceInDays(new Date(2022, 12, 6), new Date(Date.now()))
+import { Timer } from '../components/Timer'
 ---
 
 <Layout title="Hibah Kompetisi Kewirausahaan 2.0 #CiptakanPeluang">
@@ -28,13 +25,7 @@ const day = differenceInDays(new Date(2022, 12, 6), new Date(Date.now()))
   <div class="bg-neutral-100 flex w-full justify-center px-6">
     <div class="flex flex-col gap-6 w-full justify-center max-w-screen-xl">
       <div class="flex flex-col -mt-16 md:flex-row sm:items-center md:justify-between gap-6 w-full px-5 py-10 bg-white text-neutral-800 rounded-2xl shadow-lg max-w-screen-xl relative">
-        <div class="flex flex-col sm:flex-row gap-6">
-          <h4 class="text-4xl text-tertiary font-bold">{day > 0 ? day + ' Hari Lagi' : 'Hari ini'}</h4>
-          <div class="flex flex-col">
-            <p class="text-lg font-semibold">Pendaftaran akan segera berakhir</p>
-            <p>Jangan Lewatkan kesempatan berharga ini</p>
-          </div>
-        </div>
+        <Timer client:load />
         <div class="flex gap-3 flex-wrap">
           <DownloadButton client:load />
           <a href="https://s.id/torhoki" class="py-4 px-8 rounded-xl bg-white border-primary border-2 text-tertiary w-fit font-semibold">Term of Reference</a>
