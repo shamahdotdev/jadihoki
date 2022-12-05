@@ -1,7 +1,7 @@
 import differenceInDays from 'date-fns/differenceInDays/index.js'
 import { useState } from 'react'
 export const Timer = () => {
-  const [day, setDay] = useState(differenceInDays(new Date(2022, 11, 6), new Date(Date.now())))
+  const [day, setDay] = useState(differenceInDays(new Date(2022, 11, 7), new Date(Date.now())))
 
   return (
     <div className="flex flex-col sm:flex-row gap-6">
